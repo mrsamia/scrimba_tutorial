@@ -3,7 +3,7 @@ import '../style/card.css';
 import { FaHeart } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 
-function CardItems(props) {
+function Caard(props) {
     return (
         <div className='main_card'>
             <div className='card'>
@@ -25,7 +25,10 @@ function CardItems(props) {
                 </div>
             </div>
         </div>
+
+
+
     );
 }
 
-export default CardItems;
+export default Caard;
