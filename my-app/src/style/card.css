@@ -1,0 +1,25 @@
+.card{
+    padding-top: 12px;
+    max-width: 350px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 20%);
+    border-radius: 8px;
+}
+.main_card{
+    padding: 90px;
+}
+.card_text{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.icon_p{
+    margin-top: 13px;
+    margin-bottom: 1rem;
+    padding-left: 10px;
+}
