@@ -2,6 +2,7 @@ import './App.css';
 import Card from './Components/Card';
 import Map from './Components/Map';
 import CardMapping from './Practice/CardMapping';
+import ForthPart from './Practice/ForthPart';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Card />
       <Map/>
       <CardMapping/>
+      <ForthPart/>
     </div>
   );
 }
