@@ -3,15 +3,19 @@ import Card from './Components/Card';
 import Map from './Components/Map';
 import CardMapping from './Practice/CardMapping';
 import ForthPart from './Practice/ForthPart';
+import MainPage from './SoloProject/MainPage';
 
 function App() {
   return (
     <div className="App">
       <h1>React</h1>
       <Card />
-      <Map/>
+      <MainPage />
+
+
+      {/* <Map/>
       <CardMapping/>
-      <ForthPart/>
+      <ForthPart/> */}
     </div>
   );
 }

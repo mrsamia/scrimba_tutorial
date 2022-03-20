@@ -5,7 +5,7 @@ import { MdEmail } from "react-icons/md";
 
 function CardItems(props) {
     return (
-        <div className='main_card'>
+        <div className=' main_card'>
             <div className='card'>
                 <div>
                     <img className='img-fluid' src={props.image} />
