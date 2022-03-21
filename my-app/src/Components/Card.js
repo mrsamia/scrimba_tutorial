@@ -4,7 +4,7 @@ import CardItems from './CardItems';
 
 function Card(props) {
     return (
-        <div>
+        <div className='container'>
             <div className='row'>
                 <div className='col-4'>
                     <CardItems image={require("../images/catOne.webp")} alt='image'

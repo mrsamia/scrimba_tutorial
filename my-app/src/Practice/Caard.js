@@ -4,10 +4,12 @@ import { FaHeart } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 
 function Caard(props) {
+
     return (
-        <div className= 'main_card col-4'>
+        <div className='main_card col-4'>
             <div className='card'>
                 <div>
+                    <div className="card--badge">SOLD OUT</div>
                     <img className='img-fluid' src={props.image} />
                 </div>
                 <div className='card_text'>
@@ -25,8 +27,6 @@ function Caard(props) {
                 </div>
             </div>
         </div>
-
-
 
     );
 }
