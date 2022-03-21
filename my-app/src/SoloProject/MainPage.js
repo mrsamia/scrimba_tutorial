@@ -6,6 +6,7 @@ function MainPage(props) {
 
     return Data.map((e) => {
         return (
+            <div >
             <Component
                 img={e.imageUrl}
                 location={e.location}
@@ -14,6 +15,7 @@ function MainPage(props) {
                 date={e.Date}
                 description={e.description}
             />
+            </div>
         );
     })
 }

@@ -6,3 +6,33 @@
 .txt{
     text-align: start;
 }
+.main{
+    box-shadow: 0 3px 10px rgb(0 0 0 / 20%);
+    max-width: 70%;
+    margin-left: 15%;
+    padding-bottom: 90px;
+    margin-bottom: 50px;
+}
+.nav_item{
+    display: flex;
+    align-items: center;
+    
+}
+.nav{
+    display: flex;
+    justify-content: center;
+    background-color: #F55A5A;
+    height: 90px;
+    
+}
+.nav_image{
+    width: 30px;
+    color: white;
+}
+.nav_text{
+    color: white;
+    padding-top: 30px;
+    padding-left: 10px;
+    font-size: 20px;
+   
+}
