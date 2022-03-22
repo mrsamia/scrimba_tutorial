@@ -1,0 +1,27 @@
+.meme_nav{
+    display: flex;
+    align-items: center;
+    height: 65px;
+    background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+    color: white;
+    padding: 21px;
+    margin-bottom: 50px;
+}
+.imagee{
+    width:30px;
+    height:30px;
+    margin-right:15px;
+  
+}
+.h1_txt{
+    font-size: 24px;
+    margin-right: auto;
+    display: flex;
+    align-self: center;
+    
+}
+.h4_txt{
+    font-size: 22px;
+    font-weight: 500;
+    
+}
