@@ -1,6 +1,7 @@
 import './App.css';
 import Card from './Components/Card';
 import Map from './Components/Map';
+import Header from './MemeGenerator/Header';
 import CardMapping from './Practice/CardMapping';
 import FifthPart from './Practice/FifthPart';
 import ForthPart from './Practice/ForthPart';
@@ -17,6 +18,9 @@ function App() {
         <MainPage />
       </div>
 
+<div>
+  <Header/>
+</div>
       {/* <Map/>
       <CardMapping/>
       <ForthPart/>
