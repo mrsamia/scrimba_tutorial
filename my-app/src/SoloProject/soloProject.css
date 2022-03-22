@@ -12,6 +12,7 @@
     margin-left: 15%;
     padding-bottom: 90px;
     margin-bottom: 50px;
+    border-radius: 8px;
 }
 .nav_item{
     display: flex;
@@ -23,6 +24,7 @@
     justify-content: center;
     background-color: #F55A5A;
     height: 90px;
+    border-radius: 8px;
     
 }
 .nav_image{
