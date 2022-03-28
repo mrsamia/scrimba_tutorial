@@ -1,6 +1,6 @@
 .card{
     padding-top: 12px;
-    max-width: 450px;
+    max-width: 450px !important;
     box-shadow: 0 3px 10px rgb(0 0 0 / 20%);
     border-radius: 8px;
     position: relative;

@@ -1,0 +1,73 @@
+/* ------HookTwo Start------- */
+.main_body{
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    align-items: flex-end;
+}
+
+.value{
+    height: 100px;
+    width: 100px;
+    background-color: black;
+    color:white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+  
+}
+.valueTwo{
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 30px;
+    grid-gap: 10px;
+    background-color: black;
+    color:white;
+    border-radius: 10px;
+   cursor: pointer;
+}
+
+
+/* ------HookThree Start------- */
+.counter {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.count{
+    background: black;
+    color: white;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+}
+.add{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    background-color: #737373;
+    color: #D9D9D9;
+    font-size: 1.5rem;
+    margin-left: -20px;
+}
+.minus{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    background-color: #737373;
+    color: #D9D9D9;
+    font-size: 1.5rem;
+    margin-right: -20px;
+    z-index: 1;
+}

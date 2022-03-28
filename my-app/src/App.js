@@ -7,6 +7,9 @@ import MemeGenerator from './MemeGenerator/MemeGenerator';
 // import ForthPart from './Practice/ForthPart';
 import MainPage from './SoloProject/MainPage';
 import Nav from './SoloProject/Nav';
+import Hook from './UseState/Hook';
+import HookThree from './UseState/HookThree';
+import HookTwo from './UseState/HookTwo';
 
 function App() {
   return (
@@ -19,6 +22,10 @@ function App() {
        <MemeGenerator/>
       </div>
       <Card />
+      <Hook/>
+      <HookTwo/>
+      <HookThree/>
+
       {/* <Map/>
       <CardMapping/>
       <ForthPart/>
