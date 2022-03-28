@@ -19,12 +19,16 @@ function App() {
         <MainPage />
       </div>
       <div className='main'>
-       <MemeGenerator/>
+        <MemeGenerator />
       </div>
       <Card />
-      <Hook/>
-      <HookTwo/>
-      <HookThree/>
+      <div>
+        <h2>This Part is for Hook Practice</h2>
+        <Hook />
+        <HookTwo />
+        <HookThree />
+      </div>
+
 
       {/* <Map/>
       <CardMapping/>

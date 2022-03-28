@@ -1,16 +1,17 @@
 import React from 'react';
-import {useState} from 'react';
+import { useState } from 'react';
 
 function Hook(props) {
 
-const [value,setValue]=useState({
-    name:"Samia"
-})
+    const [value, setValue] = useState({
+        name: "Samia"
+    })
 
-function click(){
+    function click() {
 
-    setValue({name:"Rony"})
-}
+        setValue({ name: "Rony" })
+    }
+
 
     return (
         <div>
