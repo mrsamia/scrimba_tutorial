@@ -9,6 +9,8 @@ import BbcMap from './Practice/BbcMap';
 import MainPage from './SoloProject/MainPage';
 import Nav from './SoloProject/Nav';
 import Accordion from './UseState/Accordion';
+import AccordionThree from './UseState/AccordionThree';
+import AccordionTwo from './UseState/AccordionTwo';
 import Hook from './UseState/Hook';
 import HookThree from './UseState/HookThree';
 import HookTwo from './UseState/HookTwo';
@@ -30,6 +32,8 @@ function App() {
         <HookTwo />
         <HookThree />
         <Accordion/>
+        <AccordionTwo/>
+        <AccordionThree/>
       </div>
       <BbcMap />
      

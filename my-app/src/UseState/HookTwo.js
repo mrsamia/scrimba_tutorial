@@ -13,20 +13,12 @@ function HookTwo(props) {
         setValue(value - 1)
     }
 
+    const [name, setName] = useState("Message")
     function click() {
-
-        var img = document.getElementById("1");
-        if (img.innerHTML === "Message") {
-            img.innerHTML = "Sent";
-            img.style.color = 'white';
-            img.style.backgroundColor = "#064DDE";
-
-        }
-        else if (img.innerHTML === "Sent") {
-            img.innerHTML = "Message";
-            img.style.color = 'white';
-            img.style.backgroundColor = "#FF7A7A";
-
+        if (name === "Message") {
+            setName("Sent")
+        } else if (name === "Sent") {
+            setName("Message")
         }
     }
 
@@ -38,7 +30,7 @@ function HookTwo(props) {
                 <h3 onClick={minus}>-</h3>
             </div>
             <div>
-                <button id='1' className='btn btn-primary' onClick={click}>Message</button>
+                <button className='btn btn-primary' onClick={click}>{name}</button>
             </div>
 
 

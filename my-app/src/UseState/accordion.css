@@ -69,3 +69,21 @@
       width: 90%;
     }
   }
+
+  .accordion_head{
+      display: flex;
+      justify-content: space-between;
+      background-color: rgb(6, 33, 83);
+      color: white;
+      font-size: 20px;
+      padding: 15px;
+  }
+  .accordion_head:hover{
+      background-color: rgb(6, 42, 109);
+  }
+
+  .accordion_body{
+    background-color: rgb(6, 33, 83);
+    color: white;
+    padding: 15px;
+  }
