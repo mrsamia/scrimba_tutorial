@@ -28,7 +28,7 @@
 
 .inpuut{
     width: 450px;
-    height: 50px;
+    height: 50px;  
     border-radius: 5px;
     border: 1px solid gray;
     padding: 15px;
@@ -44,4 +44,5 @@
     background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
     color: white;
     border: none;
+    cursor: pointer;
 }
