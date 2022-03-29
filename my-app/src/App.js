@@ -1,6 +1,7 @@
 import './App.css';
 import Card from './Components/Card';
 import MemeGenerator from './MemeGenerator/MemeGenerator';
+import BbcMap from './Practice/BbcMap';
 // import Map from './Components/Map';
 // import CardMapping from './Practice/CardMapping';
 // import FifthPart from './Practice/FifthPart';
@@ -28,7 +29,7 @@ function App() {
         <HookTwo />
         <HookThree />
       </div>
-
+      <BbcMap />
 
       {/* <Map/>
       <CardMapping/>
