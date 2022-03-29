@@ -8,6 +8,7 @@ import BbcMap from './Practice/BbcMap';
 // import ForthPart from './Practice/ForthPart';
 import MainPage from './SoloProject/MainPage';
 import Nav from './SoloProject/Nav';
+import Accordion from './UseState/Accordion';
 import Hook from './UseState/Hook';
 import HookThree from './UseState/HookThree';
 import HookTwo from './UseState/HookTwo';
@@ -24,12 +25,14 @@ function App() {
       </div>
       <Card />
       <div>
-        <h2>This Part is for Hook Practice</h2>
+        <h2>React Hook Practice</h2>
         <Hook />
         <HookTwo />
         <HookThree />
+        <Accordion/>
       </div>
       <BbcMap />
+     
 
       {/* <Map/>
       <CardMapping/>
