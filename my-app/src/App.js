@@ -13,6 +13,7 @@ import AccordionThree from './UseState/AccordionThree';
 import AccordionTwo from './UseState/AccordionTwo';
 import Hook from './UseState/Hook';
 import HookFour from './UseState/HookFour';
+import HookFive from './UseState/HookFive';
 import HookTest from './UseState/HookTest';
 import HookThree from './UseState/HookThree';
 import HookTwo from './UseState/HookTwo';
@@ -38,9 +39,10 @@ function App() {
         <Accordion/>
         <AccordionTwo/>
         <AccordionThree/>
+        <HookFive/>
         
       </div>
-      <BbcMap />
+      {/* <BbcMap /> */}
      
 
       {/* <Map/>
