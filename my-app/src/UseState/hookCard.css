@@ -1,0 +1,17 @@
+
+.Card{
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 20%);
+    padding: 40px;
+  
+}
+.imge{
+    
+    width: 200px;
+    border-radius: 50%;
+    
+}
+.star{
+    width: 50px;
+    padding-bottom: 15px;
+}
