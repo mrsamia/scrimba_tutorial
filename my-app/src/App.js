@@ -17,6 +17,7 @@ import HookFive from './UseState/HookFive';
 import HookTest from './UseState/HookTest';
 import HookThree from './UseState/HookThree';
 import HookTwo from './UseState/HookTwo';
+import HookSix from './UseState/HookSix';
 
 function App() {
   return (
@@ -40,6 +41,7 @@ function App() {
         <AccordionTwo/>
         <AccordionThree/>
         <HookFive/>
+        <HookSix/>
         
       </div>
       {/* <BbcMap /> */}
