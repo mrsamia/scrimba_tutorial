@@ -7,18 +7,19 @@ function HookSevenCard(props) {
         name: "Samia Rahman",
         phone: "+1 (719) 555-1212",
         mail: "itsmyreyfalname@examaple.com",
-        isFavorite: false
+        isFavorite: true,
+        btn_name: "Message",
+        isButton: true
     })
-// let src;
-//     function click() {
-//         if (src === '../images/Empty_Star.png') {
 
-//             setContent('../images/full_star.png')
-//         }
-//         else if (src === '../images/full_star.png') {
-//             setContent('../images/Empty_Star.png')
-//         }
-//     }
+
+    function click() {
+        setContent({ ...content, isFavorite: !content.isFavorite })
+    }
+    function btn_click() {
+        setContent({ ...content, isButton: !content.isButton })
+       
+    }
 
     return (
         <div className='d-flex justify-content-center'>
@@ -29,7 +30,7 @@ function HookSevenCard(props) {
                 </div>
                 <div className='pt-5'>
                     <div>
-                        <img className='star'  src={require(content.isFavorite ? '../images/Empty_Star.png':'../images/full_star.png')} />
+                        <img className='star' onClick={click} src={require(content.isFavorite ? '../images/Empty_Star.png' : '../images/full_star.png')} />
                     </div>
                     <div>
                         <h5>{content.name}</h5>
@@ -39,6 +40,9 @@ function HookSevenCard(props) {
                     </div>
                     <div>
                         <p>{content.mail}</p>
+                    </div>
+                    <div>
+                        <button className='btn btn-primary' onClick={btn_click}>{content.isButton ? "Message" : "Sent"}</button>
                     </div>
                 </div>
             </div>
