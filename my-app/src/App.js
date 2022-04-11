@@ -19,6 +19,7 @@ import HookThree from './UseState/HookThree';
 import HookTwo from './UseState/HookTwo';
 import HookSix from './UseState/HookSix';
 import HookSevenCard from './UseState/HookSevenCard';
+import Box from './BoxSquare/Box';
 
 function App() {
   return (
@@ -44,6 +45,7 @@ function App() {
         <HookFive/>
         <HookSix/>
         <HookSevenCard/>
+        <Box/>
         
       </div>
       {/* <BbcMap /> */}
