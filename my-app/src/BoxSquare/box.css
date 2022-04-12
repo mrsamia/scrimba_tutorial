@@ -1,7 +1,11 @@
 .box{
-    height: 100px;
-    width: 100px;
+    height: 100px !important;
+    width: 100px!important;
     border-radius: 8px;
-    border: 1px solid gray;
-    background-color: aqua;
+    /* background-color: #00ffff; */
+    margin: 10px;
+}
+.cntr{
+    display: flex;
+    justify-content: center;
 }
