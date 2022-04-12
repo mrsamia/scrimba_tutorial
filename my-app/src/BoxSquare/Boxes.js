@@ -1,14 +1,15 @@
-import React from 'react';
-
+import React, { useState } from 'react';
 function Boxes(props) {
+    
+    const [On, setOn] = useState(props.on)
 
-    const styles = {
-        backgroundColor: props.on ? "#598f67" : "#23782b",
+    function click() {
+        setOn(!On)
     }
 
     return (
         <div>
-            <div style={styles} className="box"></div>
+            <div className={props.className} style={{ backgroundColor: On ? "#598f67" : "#23782b" }} onClick={click} ></div>
         </div>
     );
 }

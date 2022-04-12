@@ -20,6 +20,7 @@ import HookTwo from './UseState/HookTwo';
 import HookSix from './UseState/HookSix';
 import HookSevenCard from './UseState/HookSevenCard';
 import Box from './BoxSquare/Box';
+import BoxTwo from './BoxSquare/BoxTwo';
 
 function App() {
   return (
@@ -46,6 +47,7 @@ function App() {
         <HookSix/>
         <HookSevenCard/>
         <Box/>
+        <BoxTwo/>
         
       </div>
       {/* <BbcMap /> */}
