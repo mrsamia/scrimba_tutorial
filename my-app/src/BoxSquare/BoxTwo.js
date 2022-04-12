@@ -12,7 +12,7 @@ function BoxTwo(props) {
                     BoxData.map((e) => {
                         return (
                             <div className='col-4'>
-                                <Boxes className="box" on={e.on} />
+                                <Boxes className="box" color={e.on} />
                             </div>
                         );
                     })
