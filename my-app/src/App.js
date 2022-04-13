@@ -1,7 +1,7 @@
 import './App.css';
 import Card from './Components/Card';
 import MemeGenerator from './MemeGenerator/MemeGenerator';
-import BbcMap from './Practice/BbcMap';
+// import BbcMap from './Practice/BbcMap';
 // import Map from './Components/Map';
 // import CardMapping from './Practice/CardMapping';
 // import FifthPart from './Practice/FifthPart';
@@ -22,6 +22,7 @@ import HookSevenCard from './UseState/HookSevenCard';
 import Box from './BoxSquare/Box';
 import BoxTwo from './BoxSquare/BoxTwo';
 import BoxThree from './BoxSquare/BoxThree';
+import AccordionFour from './UseState/AccordionFour';
 
 function App() {
   return (
@@ -44,6 +45,7 @@ function App() {
         <Accordion/>
         <AccordionTwo/>
         <AccordionThree/>
+        <AccordionFour/>
         <HookFive/>
         <HookSix/>
         <HookSevenCard/>
@@ -52,10 +54,8 @@ function App() {
         <BoxThree/>
         
       </div>
-      {/* <BbcMap /> */}
-     
-
-      {/* <Map/>
+      {/* <BbcMap /> 
+       <Map/>
       <CardMapping/>
       <ForthPart/>
       <FifthPart/>
