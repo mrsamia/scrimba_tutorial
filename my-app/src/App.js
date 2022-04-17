@@ -24,6 +24,7 @@ import BoxTwo from './BoxSquare/BoxTwo';
 import BoxThree from './BoxSquare/BoxThree';
 import AccordionFour from './UseState/AccordionFour';
 import PopularEvents from './Template/PopularEvents';
+import FormOne from './Form/FormOne';
 
 function App() {
   return (
@@ -54,6 +55,7 @@ function App() {
         <BoxTwo/>
         <BoxThree/>
         <PopularEvents/>
+        <FormOne/>
         
       </div>
       {/* <BbcMap /> 
