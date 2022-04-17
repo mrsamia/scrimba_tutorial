@@ -3,6 +3,7 @@ import EventsData from './EventsData';
 import EventsItem from './EventsItem';
 
 function PopularEvents(props) {
+    
  
         return EventsData.map((e)=>{
             return(

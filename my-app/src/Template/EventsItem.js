@@ -3,7 +3,7 @@ import React from 'react';
 function EventsItem(props) {
     return (
         <div className='container pt-5 mt-4'>
-            <div className='row'>
+            <div className='row pt-5'>
                 {props.isLeft && <div className='col-6'>
                     <img src={props.image} alt='img' style={{ height: "350px", width: "300px" }} />
                 </div>}
