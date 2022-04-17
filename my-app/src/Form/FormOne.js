@@ -8,8 +8,8 @@ function FormOne(props) {
         firstname: " ",
         lastname: " ",
         address: " ",
-        email: " "
-
+        email: " ",
+        textarea: " "
     })
 
     function onchnageHandler(event) {
@@ -21,7 +21,7 @@ function FormOne(props) {
 
     return (
         <div className='container pt-5 pb-5'>
-            <h6>Input Form</h6>
+            <h4>Input Form</h4>
             <p>FirstName: {value.firstname}</p>
             <p>LastName: {value.lastname}</p>
             <p>address: {value.address}</p>
@@ -32,6 +32,10 @@ function FormOne(props) {
                 <input type="text" name="address" placeholder='Your address' onChange={onchnageHandler} /><br></br><br></br>
                 <input type="text" name="email" placeholder='Your email' onChange={onchnageHandler} /><br></br><br></br>
             </form>
+
+            <p>{value.textarea}</p>
+            <textarea type="text" name="textarea" placeholder='Text Area' onChange={onchnageHandler} />
+
         </div>
     );
 }
