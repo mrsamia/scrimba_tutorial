@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-
-
+import SelectOption from './SelectOption';
 
 function FormOne(props) {
 
@@ -50,6 +49,11 @@ function FormOne(props) {
                 <input type="radio" id='react' name='language' value="react" />
                 <label htmlFor="react">React</label>
             </fieldset>
+
+            <div className='pt-5 pb-5'>
+                <SelectOption />
+            </div>
+
 
         </div>
     );
