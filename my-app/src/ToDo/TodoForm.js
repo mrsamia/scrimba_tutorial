@@ -1,33 +1,38 @@
 import React, { useState } from 'react';
 
 function TodoForm(props) {
-    const [value, setValue] = useState({
-        AddTodo:""
-    })
+    /**
+     * Input field - state to hold the value
+     * Button - onClick function
+     * TodoList - state to hold all the value
+     */
+    const [value, setValue] = useState('');
+    const [todoList, setTodoList] = useState([]);
 
-    function onchnageHandler(event) {
-        var myName = event.target.name;
-        var myValue = event.target.value;
-        setValue({ ...value, [myName]: myValue });
-
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        setTodoList([...todoList, value])
+        setValue('')
     }
 
-    function handleSubmit(event) {
-        event.preventDefault();
-        console.log(value);
+    const handleChange = (e) => {
+        setValue(e.target.value);
     }
-  
 
+    const handleClick = (index) => {
+        setTodoList(todoList.filter((item, i) => i !== index));
+    }
 
     return (
-        <div className='container pt-2 pb-4'>
+        <div>
             <form onSubmit={handleSubmit}>
-                <input type="text" placeholder='Add a Todo' name="AddTodo" onChange={onchnageHandler} />
-                <button>Add Todo</button> 
+                <input value={value} onChange={handleChange}/>
+                <button type='submit'>Add todo</button>
             </form>
-            <p>{value.AddTodo}</p>
+
+            {todoList.map((item, index) => <p onClick={() => handleClick(index)}>{item}</p>)}
         </div>
-    );
+    )
 }
 
 export default TodoForm;
