@@ -26,6 +26,8 @@ import AccordionFour from './UseState/AccordionFour';
 import PopularEvents from './Template/PopularEvents';
 import FormOne from './Form/FormOne';
 import TodoList from './ToDo/TodoList';
+import TodoFormTwo from './ToDo/TodoFormTwo';
+import TodoApp from './ToDo/TodoApp';
 
 
 function App() {
@@ -59,6 +61,8 @@ function App() {
         <PopularEvents/>
         <FormOne/>
         <TodoList/>
+        <TodoFormTwo/>
+        <TodoApp/>
         
       </div>
       {/* <BbcMap /> 
