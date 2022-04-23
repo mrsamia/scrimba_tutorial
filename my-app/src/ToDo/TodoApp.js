@@ -26,6 +26,7 @@ function TodoApp(props) {
         newTodos[index].isCompleted = true;
         setTodos(newTodos);
       };
+      
       const removeTodo = index => {
         const newTodos = [...todos];
         newTodos.splice(index, 1);
