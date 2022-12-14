@@ -11,7 +11,14 @@ function MultistepForm(props) {
 
   return (
     <div className="container d-flex justify-content-center">
-      <Multistep activeStep={1} showNavigation={true} steps={steps} />
+      <div>
+        <div>
+          <h2>Multistep Form using react Package</h2>
+        </div>
+        <div>
+          <Multistep activeStep={1} showNavigation={true} steps={steps} />
+        </div>
+      </div>
     </div>
   );
 }

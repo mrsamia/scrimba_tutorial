@@ -3,19 +3,19 @@ import React from "react";
 function StepOne(props) {
   return (
     <div>
-      Contact Info:
+      Name:
       <p>
         <input
-          placeholder="E-mail..."
+          placeholder="First name..."
           oninput="this.className = ''"
-          name="email"
+          name="fname"
         />
       </p>
       <p>
         <input
-          placeholder="Phone..."
+          placeholder="Last name..."
           oninput="this.className = ''"
-          name="phone"
+          name="lname"
         />
       </p>
     </div>

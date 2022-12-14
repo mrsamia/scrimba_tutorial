@@ -29,6 +29,8 @@ import TodoList from "./ToDo/TodoList";
 import TodoFormTwo from "./ToDo/TodoFormTwo";
 import TodoApp from "./ToDo/TodoApp";
 import MultistepForm from "./MultistepForm/MultistepForm";
+import MultistepFormTwo from "./MultistepForm/MultistepFormTwo";
+import Multipliction from "./Mutliplication/Multipliction";
 
 function App() {
   return (
@@ -65,8 +67,9 @@ function App() {
         <TodoApp />
       </div>
       <div className="pt-5 pb-5">
-        <h2>Multistep Form using react Package</h2>
         <MultistepForm/>
+        <MultistepFormTwo/>
+        <Multipliction/>
       </div>
       {/* <BbcMap /> 
        <Map/>
