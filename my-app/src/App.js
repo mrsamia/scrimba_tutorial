@@ -1,34 +1,34 @@
-import './App.css';
-import Card from './Components/Card';
-import MemeGenerator from './MemeGenerator/MemeGenerator';
+import "./App.css";
+import Card from "./Components/Card";
+import MemeGenerator from "./MemeGenerator/MemeGenerator";
 // import BbcMap from './Practice/BbcMap';
 // import Map from './Components/Map';
 // import CardMapping from './Practice/CardMapping';
 // import FifthPart from './Practice/FifthPart';
 // import ForthPart from './Practice/ForthPart';
-import MainPage from './SoloProject/MainPage';
-import Nav from './SoloProject/Nav';
-import Accordion from './UseState/Accordion';
-import AccordionThree from './UseState/AccordionThree';
-import AccordionTwo from './UseState/AccordionTwo';
-import Hook from './UseState/Hook';
-import HookFour from './UseState/HookFour';
-import HookFive from './UseState/HookFive';
-import HookTest from './UseState/HookTest';
-import HookThree from './UseState/HookThree';
-import HookTwo from './UseState/HookTwo';
-import HookSix from './UseState/HookSix';
-import HookSevenCard from './UseState/HookSevenCard';
-import Box from './BoxSquare/Box';
-import BoxTwo from './BoxSquare/BoxTwo';
-import BoxThree from './BoxSquare/BoxThree';
-import AccordionFour from './UseState/AccordionFour';
-import PopularEvents from './Template/PopularEvents';
-import FormOne from './Form/FormOne';
-import TodoList from './ToDo/TodoList';
-import TodoFormTwo from './ToDo/TodoFormTwo';
-import TodoApp from './ToDo/TodoApp';
-
+import MainPage from "./SoloProject/MainPage";
+import Nav from "./SoloProject/Nav";
+import Accordion from "./UseState/Accordion";
+import AccordionThree from "./UseState/AccordionThree";
+import AccordionTwo from "./UseState/AccordionTwo";
+import Hook from "./UseState/Hook";
+import HookFour from "./UseState/HookFour";
+import HookFive from "./UseState/HookFive";
+import HookTest from "./UseState/HookTest";
+import HookThree from "./UseState/HookThree";
+import HookTwo from "./UseState/HookTwo";
+import HookSix from "./UseState/HookSix";
+import HookSevenCard from "./UseState/HookSevenCard";
+import Box from "./BoxSquare/Box";
+import BoxTwo from "./BoxSquare/BoxTwo";
+import BoxThree from "./BoxSquare/BoxThree";
+import AccordionFour from "./UseState/AccordionFour";
+import PopularEvents from "./Template/PopularEvents";
+import FormOne from "./Form/FormOne";
+import TodoList from "./ToDo/TodoList";
+import TodoFormTwo from "./ToDo/TodoFormTwo";
+import TodoApp from "./ToDo/TodoApp";
+import MultistepForm from "./MultistepForm/MultistepForm";
 
 function App() {
   return (
@@ -37,7 +37,7 @@ function App() {
         <Nav />
         <MainPage />
       </div>
-      <div className='main'>
+      <div className="main">
         <MemeGenerator />
       </div>
       <Card />
@@ -46,24 +46,27 @@ function App() {
         <Hook />
         <HookTwo />
         <HookThree />
-        <HookFour/>
-        <HookTest/>
-        <Accordion/>
-        <AccordionTwo/>
-        <AccordionThree/>
-        <AccordionFour/>
-        <HookFive/>
-        <HookSix/>
-        <HookSevenCard/>
-        <Box/>
-        <BoxTwo/>
-        <BoxThree/>
-        <PopularEvents/>
-        <FormOne/>
-        <TodoList/>
-        <TodoFormTwo/>
-        <TodoApp/>
-        
+        <HookFour />
+        <HookTest />
+        <Accordion />
+        <AccordionTwo />
+        <AccordionThree />
+        <AccordionFour />
+        <HookFive />
+        <HookSix />
+        <HookSevenCard />
+        <Box />
+        <BoxTwo />
+        <BoxThree />
+        <PopularEvents />
+        <FormOne />
+        <TodoList />
+        <TodoFormTwo />
+        <TodoApp />
+      </div>
+      <div className="pt-5 pb-5">
+        <h2>Multistep Form using react Package</h2>
+        <MultistepForm/>
       </div>
       {/* <BbcMap /> 
        <Map/>
@@ -71,7 +74,6 @@ function App() {
       <ForthPart/>
       <FifthPart/>
       <ForthPart/> */}
-
     </div>
   );
 }
