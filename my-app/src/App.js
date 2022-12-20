@@ -31,6 +31,9 @@ import TodoApp from "./ToDo/TodoApp";
 import MultistepForm from "./MultistepForm/MultistepForm";
 import MultistepFormTwo from "./MultistepForm/MultistepFormTwo";
 import Multipliction from "./Mutliplication/Multipliction";
+import TodoAppTwo from "./ToDo/TodoAppTwo";
+import UserInfoForm from "./Form/UserInfoForm";
+import ArrayMap from "./Array/ArrayMap";
 
 function App() {
   return (
@@ -66,10 +69,14 @@ function App() {
         <TodoFormTwo />
         <TodoApp />
       </div>
+
       <div className="pt-5 pb-5">
         <MultistepForm/>
         <MultistepFormTwo/>
         <Multipliction/>
+        <TodoAppTwo/>
+        <UserInfoForm/>
+        <ArrayMap/>
       </div>
       {/* <BbcMap /> 
        <Map/>
