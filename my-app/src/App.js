@@ -34,19 +34,20 @@ import Multipliction from "./Mutliplication/Multipliction";
 import TodoAppTwo from "./ToDo/TodoAppTwo";
 import UserInfoForm from "./Form/UserInfoForm";
 import ArrayMap from "./Array/ArrayMap";
+import Login from "./Login/Login";
 
 function App() {
   return (
     <div className="App">
-      <div className="main">
+      {/* <div className="main">
         <Nav />
         <MainPage />
-      </div>
-      <div className="main">
+      </div> */}
+      {/* <div className="main">
         <MemeGenerator />
-      </div>
-      <Card />
-      <div>
+      </div> */}
+      {/* <Card /> */}
+      {/* <div>
         <h2>React Hook Practice</h2>
         <Hook />
         <HookTwo />
@@ -68,16 +69,17 @@ function App() {
         <TodoList />
         <TodoFormTwo />
         <TodoApp />
-      </div>
+      </div> */}
 
-      <div className="pt-5 pb-5">
+      {/* <div className="pt-5 pb-5">
         <MultistepForm/>
         <MultistepFormTwo/>
         <Multipliction/>
         <TodoAppTwo/>
         <UserInfoForm/>
         <ArrayMap/>
-      </div>
+      </div> */}
+      <Login/>
       {/* <BbcMap /> 
        <Map/>
       <CardMapping/>
