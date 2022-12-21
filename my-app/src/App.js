@@ -35,6 +35,9 @@ import TodoAppTwo from "./ToDo/TodoAppTwo";
 import UserInfoForm from "./Form/UserInfoForm";
 import ArrayMap from "./Array/ArrayMap";
 import Login from "./Login/Login";
+import Modaal from "./Modal/Modaal";
+import ModalForm from "./Modal/ModalForm";
+import ModalFormTwo from "./Modal/ModalFormTwo";
 
 function App() {
   return (
@@ -80,6 +83,9 @@ function App() {
         <ArrayMap/>
       </div> */}
       <Login/>
+      <Modaal/>
+      <ModalForm/>
+      <ModalFormTwo/>
       {/* <BbcMap /> 
        <Map/>
       <CardMapping/>

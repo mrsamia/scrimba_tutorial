@@ -20,11 +20,9 @@
   background-color: rgb(0, 255, 34)!important;
 }
 .form-control:focus {
-
     outline: 1px solid red!important;
     border: none!important;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2)!important;
-
   }
 
 .form-check-input{
