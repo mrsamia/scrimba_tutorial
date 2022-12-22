@@ -83,8 +83,8 @@ function App() {
         <UserInfoForm/>
         <ArrayMap/>
       </div> */}
-      <Login/>
-      <Footer/>
+      {/* <Login/>
+      <Footer/> */}
       {/* <Modaal/> */}
       <ModalForm/>
       <ModalFormTwo/>

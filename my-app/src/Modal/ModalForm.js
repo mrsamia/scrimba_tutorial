@@ -5,17 +5,18 @@ import Modal from "react-bootstrap/Modal";
 
 function ModalForm(props) {
   const { show, onHide } = props;
+  console.log(props, "props");
 
-  // const [edit,setEdit]=useState(false)
+  const [edit,setEdit]=useState(false)
 
-  // const[address,setAddress]=useState("")
+  const[address,setAddress]=useState("")
 
-  // function EditHandler() {
-  //   setEdit(!edit);
-  // }
-  // function addressChangeHandler1(event){
-  //   setAddress(event.target.value);
-  // }
+  function EditHandler() {
+    setEdit(!edit);
+  }
+  function addressChangeHandler1(event){
+    setAddress(event.target.value);
+  }
 
   return (
     <div>
@@ -24,6 +25,12 @@ function ModalForm(props) {
           <Modal.Title>Modal heading</Modal.Title>
         </Modal.Header>
         <Modal.Body>
+          <div>
+           {/* <pre>
+           {JSON.stringify(props)}
+           </pre> */}
+          </div>
+          <div>
           <p>
             <span className="fw-bold">Student Name :</span> {props.name}
           </p>
@@ -33,23 +40,36 @@ function ModalForm(props) {
           <p>
             <span className="fw-bold">Address :</span> {props.address}
           </p>
-        </Modal.Body>
-        <Modal.Footer>
-          {/* <Button variant="secondary" onClick={EditHandler}>
-          Edit
-        </Button>
-        <Button variant="primary">Save Changes</Button>
+          </div>
 
-        <div>
+          <div>
           {edit?<div className="mb-3">
             <input
+              type="text"
+              className="form-control mb-3"
+              placeholder="Name"
+              onChange={addressChangeHandler1}
+            />
+             <input
+              type="text"
+              className="form-control mb-3"
+              placeholder="Roll"
+              onChange={addressChangeHandler1}
+            />
+             <input
               type="text"
               className="form-control"
               placeholder="Address"
               onChange={addressChangeHandler1}
             />
           </div>:""}
-        </div> */}
+        </div>
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={EditHandler}>
+          Edit
+        </Button>
+        <Button variant="primary">Save Changes</Button>
         </Modal.Footer>
       </Modal>
     </div>

@@ -27,7 +27,7 @@ function ModalFormTwo(props) {
   function handleShow(item) {
     console.log(item);
     setShow(true);
-    setDatapass({datapass:item})
+    setDatapass(item)
   }
   function handleClose() {
     setShow(false);  
@@ -94,7 +94,7 @@ function ModalFormTwo(props) {
         </div>
       </div>
     <div>
-    {show ? <ModalForm show={show} onHide={handleClose} />: ""}
+    {show ? <ModalForm show={show} currentData={datapass} onHide={handleClose} name={datapass.name} roll={datapass.roll} address={datapass.address}/>: ""}
     </div>
     </div>
   );
