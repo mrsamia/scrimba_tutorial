@@ -38,6 +38,7 @@ import Login from "./Login/Login";
 import Modaal from "./Modal/Modaal";
 import ModalForm from "./Modal/ModalForm";
 import ModalFormTwo from "./Modal/ModalFormTwo";
+import Footer from "./Footer/Footer";
 
 function App() {
   return (
@@ -83,7 +84,8 @@ function App() {
         <ArrayMap/>
       </div> */}
       <Login/>
-      <Modaal/>
+      <Footer/>
+      {/* <Modaal/> */}
       <ModalForm/>
       <ModalFormTwo/>
       {/* <BbcMap /> 

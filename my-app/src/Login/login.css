@@ -8,25 +8,25 @@
   display: flex !important;
   justify-content: start;
 }
-.form-control{
-    box-shadow: none!important;
+.form-control {
+  box-shadow: none !important;
 }
-.form-control-bg-red{
-  box-shadow: none!important;
-  background-color: aqua!important;
+.form-control-bg-red {
+  box-shadow: none !important;
+  background-color: aqua !important;
 }
-.form-control-bg-blue{
-  box-shadow: none!important;
-  background-color: rgb(0, 255, 34)!important;
+.form-control-bg-blue {
+  box-shadow: none !important;
+  background-color: rgb(0, 255, 34) !important;
 }
 .form-control:focus {
-    outline: 1px solid red!important;
-    border: none!important;
-    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2)!important;
-  }
+  outline: 1px solid red !important;
+  border: none !important;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2) !important;
+}
 
-.form-check-input{
-    box-shadow: none!important;
+.form-check-input {
+  box-shadow: none !important;
 }
 .font {
   font-size: 1rem;
@@ -36,36 +36,36 @@
   background-color: #f58220 !important;
   color: white !important;
 }
-.font-sm{
-    color: #807e7e;
-    font-size: .875em;
-    font-weight: 400;
+.font-sm {
+  color: #807e7e;
+  font-size: 0.875em;
+  font-weight: 400;
 }
 .form-check-input:checked {
-    background-color: #f58220 !important;
-    border-color: #f58220 !important;
+  background-color: #f58220 !important;
+  border-color: #f58220 !important;
 }
-.hover:hover{
-    color: #f58220;
-    cursor: pointer;
+.hover:hover {
+  color: #f58220;
+  cursor: pointer;
 }
-.p-relative{
-    position: relative;
+.p-relative {
+  position: relative;
 }
-.eye-icon{
-    position: absolute;
-    right: 3%;
-    top: 34%;
-    color: #f58220;
+.eye-icon {
+  position: absolute;
+  right: 3%;
+  top: 34%;
+  color: #f58220;
 }
 
 @media only screen and (max-width: 767px) {
-    .container .row .col-md-6 img {
-      display: none;
-    }
-    .padding{
-        padding-left: 15px;
-        padding-right: 15px;
-        padding-bottom: 0px!important;
-    }
+  .container .row .col-md-6 img {
+    display: none;
   }
+  .padding {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 0px !important;
+  }
+}
