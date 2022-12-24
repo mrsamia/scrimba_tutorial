@@ -1,22 +1,32 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 
 function ModalForm(props) {
-  const { show, onHide } = props;
+  
+  const { show, onHide,currentData } = props;
   console.log(props, "props");
 
-  const [edit,setEdit]=useState(false)
+  const [editvalue, setEditValue] =useState ({name: props.name, roll: props.roll, address: props.address });
+  const [edit, setEdit] = useState(false);
+  const[editStudentList,setEditStudentlist]=useState([])
 
-  const[address,setAddress]=useState("")
-
+  function editName(event) {
+    setEditValue({ ...editvalue, name: event.target.value });
+  }
+  function editRoll(event) {
+    setEditValue({ ...editvalue, roll: event.target.value });
+  }
+  function editAddress(event) {
+    setEditValue({ ...editvalue, address: event.target.value });
+  }
   function EditHandler() {
-    setEdit(!edit);
+    setEdit(true);
+    setEditStudentlist([...editStudentList,editvalue]);
   }
-  function addressChangeHandler1(event){
-    setAddress(event.target.value);
-  }
+  
+  
 
   return (
     <div>
@@ -26,50 +36,57 @@ function ModalForm(props) {
         </Modal.Header>
         <Modal.Body>
           <div>
-           {/* <pre>
+            {/* <pre>
            {JSON.stringify(props)}
            </pre> */}
           </div>
           <div>
-          <p>
-            <span className="fw-bold">Student Name :</span> {props.name}
-          </p>
-          <p>
-            <span className="fw-bold">Roll :</span> {props.roll}
-          </p>
-          <p>
-            <span className="fw-bold">Address :</span> {props.address}
-          </p>
+            <p>
+              <span className="fw-bold">Student Name :</span> {props?.currentData?.item?.name ?? ''}
+            </p>
+            <p>
+              <span className="fw-bold">Roll :</span> {props?.currentData?.item?.roll ?? ''}
+            </p>
+            <p>
+              <span className="fw-bold">Address :</span> {props?.currentData?.item?.address ?? ''}
+            </p>
           </div>
 
           <div>
-          {edit?<div className="mb-3">
-            <input
-              type="text"
-              className="form-control mb-3"
-              placeholder="Name"
-              onChange={addressChangeHandler1}
-            />
-             <input
-              type="text"
-              className="form-control mb-3"
-              placeholder="Roll"
-              onChange={addressChangeHandler1}
-            />
-             <input
-              type="text"
-              className="form-control"
-              placeholder="Address"
-              onChange={addressChangeHandler1}
-            />
-          </div>:""}
-        </div>
+            {edit ? (
+              <div className="mb-3">
+                <input
+                  type="text"
+                  className="form-control mb-3"
+                  placeholder="Name"
+                  value={editvalue.name}
+                  onChange={editName}
+                />
+                <input
+                  type="text"
+                  className="form-control mb-3"
+                  placeholder="Roll"
+                  onChange={editRoll}
+                  value={editvalue.roll}
+                />
+                <input
+                  type="text"
+                  className="form-control"
+                  placeholder="Address"
+                  onChange={editAddress}
+                  value={editvalue.address}
+                />
+              </div>
+            ) : (
+              ""
+            )}
+          </div>
         </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={EditHandler}>
-          Edit
-        </Button>
-        <Button variant="primary">Save Changes</Button>
+            Edit
+          </Button>
+          <Button variant="primary" onClick={()=>props.savedEditValue(props.index,props.currentData.item)}>Save Changes </Button>
         </Modal.Footer>
       </Modal>
     </div>

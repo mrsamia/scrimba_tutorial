@@ -3,13 +3,14 @@ import ModalForm from "./ModalForm";
 
 function ModalFormTwo(props) {
   const [userinput, setUserinput] = useState({
+    index: "",
     name: "",
     roll: "",
     address: "",
   });
   const [studentlist, setStudentlist] = useState([]);
   const [show, setShow] = useState(false);
-  const [datapass,setDatapass]=useState({})
+  const [datapass, setDatapass] = useState({});
 
   function nameChangeHandler(event) {
     setUserinput({ ...userinput, name: event.target.value });
@@ -24,13 +25,19 @@ function ModalFormTwo(props) {
     setStudentlist([...studentlist, userinput]);
   }
 
-  function handleShow(item) {
-    console.log(item);
+  function handleShow(index, item) {
+    console.log(index, item, "cli");
     setShow(true);
-    setDatapass(item)
+    setDatapass({ index, item });
   }
   function handleClose() {
-    setShow(false);  
+    setShow(false);
+  }
+
+  function handleUpdate(index, item) {
+    console.log(item, index);
+    setDatapass({ index: index, name: item.name, roll: item.roll, address: item.address });
+    // setDatapass({...item,index:index});
   }
 
   return (
@@ -78,8 +85,8 @@ function ModalFormTwo(props) {
         </div>
 
         <div className="pt-5 pb-5">
-          {studentlist.map((item) => (
-            <div className="card mb-3" onClick={()=> handleShow(item)}>
+          {studentlist.map((item, index) => (
+            <div className="card mb-3" onClick={() => handleShow(index, item)}>
               <p>
                 <span className="fw-bold">Student Name :</span> {item.name}
               </p>
@@ -93,9 +100,15 @@ function ModalFormTwo(props) {
           ))}
         </div>
       </div>
-    <div>
-    {show ? <ModalForm show={show} currentData={datapass} onHide={handleClose} name={datapass.name} roll={datapass.roll} address={datapass.address}/>: ""}
-    </div>
+      <div>
+        {1 ? (
+          <ModalForm
+            show={show}
+            currentData={datapass}
+            onHide={handleClose}
+          />
+        ) : ''}
+      </div>
     </div>
   );
 }
