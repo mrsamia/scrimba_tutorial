@@ -5,7 +5,7 @@ import Modal from "react-bootstrap/Modal";
 
 function ModalForm(props) {
   
-  const { show, onHide,currentData } = props;
+  const { show, onHide } = props;
   console.log(props, "props");
 
   const [editvalue, setEditValue] =useState ({name: props.name, roll: props.roll, address: props.address });

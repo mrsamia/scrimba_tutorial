@@ -39,6 +39,7 @@ import Modaal from "./Modal/Modaal";
 import ModalForm from "./Modal/ModalForm";
 import ModalFormTwo from "./Modal/ModalFormTwo";
 import Footer from "./Footer/Footer";
+import Product from "./CartTutorial/Product";
 
 function App() {
   return (
@@ -86,14 +87,16 @@ function App() {
       {/* <Login/>
       <Footer/> */}
       {/* <Modaal/> */}
-      <ModalForm/>
-      <ModalFormTwo/>
+      {/* <ModalForm/>
+      
+      <ModalFormTwo/> */}
       {/* <BbcMap /> 
        <Map/>
       <CardMapping/>
       <ForthPart/>
       <FifthPart/>
       <ForthPart/> */}
+      <Product/>
     </div>
   );
 }

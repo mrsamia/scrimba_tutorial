@@ -36,7 +36,12 @@ function ModalFormTwo(props) {
 
   function handleUpdate(index, item) {
     console.log(item, index);
-    setDatapass({ index: index, name: item.name, roll: item.roll, address: item.address });
+    setDatapass({
+      index: index,
+      name: item.name,
+      roll: item.roll,
+      address: item.address,
+    });
     // setDatapass({...item,index:index});
   }
 
@@ -101,13 +106,16 @@ function ModalFormTwo(props) {
         </div>
       </div>
       <div>
-        {1 ? (
+        {show ? (
           <ModalForm
             show={show}
             currentData={datapass}
             onHide={handleClose}
+            // savedEditValue={handleUpdate}
           />
-        ) : ''}
+        ) : (
+          ""
+        )}
       </div>
     </div>
   );
