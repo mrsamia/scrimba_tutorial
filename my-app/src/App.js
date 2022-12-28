@@ -39,9 +39,14 @@ import Modaal from "./Modal/Modaal";
 import ModalForm from "./Modal/ModalForm";
 import ModalFormTwo from "./Modal/ModalFormTwo";
 import Footer from "./Footer/Footer";
-import Product from "./CartTutorial/Product";
+
+
+import Cart from "./CartTuitorial/Cart";
+import Product from "./CartTuitorial/Product";
+import ProductList from "./CartTuitorial/ProductList";
 
 function App() {
+
   return (
     <div className="App">
       {/* <div className="main">
@@ -96,7 +101,9 @@ function App() {
       <ForthPart/>
       <FifthPart/>
       <ForthPart/> */}
-      <Product/>
+    {/* <Cart/> */}
+    <ProductList/>
+   
     </div>
   );
 }
