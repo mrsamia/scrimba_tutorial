@@ -88,13 +88,13 @@ function App() {
         <TodoAppTwo/>
         <UserInfoForm/>
         <ArrayMap/>
-      </div> */}
-      {/* <Login/>
-      <Footer/> */}
-      {/* <Modaal/> */}
-      {/* <ModalForm/>
+      </div>
+      <Login/>
+      <Footer/>
+      <Modaal/>
+      <ModalForm/> */}
       
-      <ModalFormTwo/> */}
+      {/* <ModalFormTwo/> */}
       {/* <BbcMap /> 
        <Map/>
       <CardMapping/>

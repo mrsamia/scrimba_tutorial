@@ -8,7 +8,7 @@ function ModalForm(props) {
   const { show, onHide } = props;
   console.log(props, "props");
 
-  const [editvalue, setEditValue] =useState ({name: props.name, roll: props.roll, address: props.address });
+  const [editvalue, setEditValue] =useState ({name: props.currentData.item.name, roll:props.currentData.item.roll, address: props.currentData.item.address });
   const [edit, setEdit] = useState(false);
   const[editStudentList,setEditStudentlist]=useState([])
 
