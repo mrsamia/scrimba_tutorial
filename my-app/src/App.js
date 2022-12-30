@@ -39,11 +39,11 @@ import Modaal from "./Modal/Modaal";
 import ModalForm from "./Modal/ModalForm";
 import ModalFormTwo from "./Modal/ModalFormTwo";
 import Footer from "./Footer/Footer";
-
-
-import Cart from "./CartTuitorial/Cart";
 import Product from "./CartTuitorial/Product";
 import ProductList from "./CartTuitorial/ProductList";
+import ProductItems from "./CartPractice/ProductItems";
+import Cart from "./CartPractice/Cart";
+
 
 function App() {
 
@@ -93,7 +93,7 @@ function App() {
       <Footer/>
       <Modaal/>
       <ModalForm/> */}
-      
+
       {/* <ModalFormTwo/> */}
       {/* <BbcMap /> 
        <Map/>
@@ -101,9 +101,12 @@ function App() {
       <ForthPart/>
       <FifthPart/>
       <ForthPart/> */}
-    {/* <Cart/> */}
-    <ProductList/>
-   
+      {/* <Cart/> */}
+      {/* <ProductList /> */}
+      <Cart/>
+     
+    
+
     </div>
   );
 }

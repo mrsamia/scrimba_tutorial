@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Product from "./Product";
-import Cart from "./Cart";
+
 
 function ProductList(props) {
   const [productList, setProductList] = useState([
@@ -26,6 +26,8 @@ function ProductList(props) {
     quantity: "",
   });
 
+  const [newproductList, setnewproductList] = useState([]);
+
   function NameChangeHandler(event) {
     setUserinput({ ...userinput, name: event.target.value });
   }
@@ -35,7 +37,8 @@ function ProductList(props) {
   function QuantityChangeHandler(event) {
     setUserinput({ ...userinput, quantity: event.target.value });
   }
-  const [newproductList, setnewproductList] = useState([]);
+ 
+
   const increaseProductQuantity = (name) => {
     setProductList(
       productList.map((item) =>
