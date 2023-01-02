@@ -43,6 +43,8 @@ import Product from "./CartTuitorial/Product";
 import ProductList from "./CartTuitorial/ProductList";
 import ProductItems from "./CartPractice/ProductItems";
 import Cart from "./CartPractice/Cart";
+import Form from "./StudentInfoForm/Form";
+import StModal from "./StudentInfoForm/StModal";
 
 function App() {
   return (
@@ -92,7 +94,7 @@ function App() {
       <Modaal /> */}
       {/* <ModalForm /> */}
 
-      {/* <ModalFormTwo /> */}
+      <ModalFormTwo />
       {/* <BbcMap /> 
        <Map/>
       <CardMapping/>
@@ -101,7 +103,9 @@ function App() {
       <ForthPart/> */}
       {/* <Cart />
       <ProductList /> */}
-      <Cart />
+      {/* <Cart /> */}
+      <Form/>
+      <StModal/>
     </div>
   );
 }

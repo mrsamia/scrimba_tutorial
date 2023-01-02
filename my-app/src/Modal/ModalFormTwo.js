@@ -34,7 +34,6 @@ function ModalFormTwo(props) {
     setShow(false);
   }
 
-
   return (
     <div className="bg-light  pt-5 pb-5">
       <div className="container pt-5 pb-5">
