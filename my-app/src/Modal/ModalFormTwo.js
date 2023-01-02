@@ -34,16 +34,6 @@ function ModalFormTwo(props) {
     setShow(false);
   }
 
-  function handleUpdate(index, item) {
-    console.log(item, index);
-    setDatapass({
-      index: index,
-      name: item.name,
-      roll: item.roll,
-      address: item.address,
-    });
-    // setDatapass({...item,index:index});
-  }
 
   return (
     <div className="bg-light  pt-5 pb-5">
@@ -111,7 +101,7 @@ function ModalFormTwo(props) {
             show={show}
             currentData={datapass}
             onHide={handleClose}
-            // savedEditValue={handleUpdate}
+            
           />
         ) : (
           ""

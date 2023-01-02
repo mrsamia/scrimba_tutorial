@@ -86,7 +86,7 @@ function ModalForm(props) {
           <Button variant="secondary" onClick={EditHandler}>
             Edit
           </Button>
-          <Button variant="primary" onClick={()=>props.savedEditValue(props.index,props.currentData.item)}>Save Changes </Button>
+          <Button variant="primary">Save Changes </Button>
         </Modal.Footer>
       </Modal>
     </div>

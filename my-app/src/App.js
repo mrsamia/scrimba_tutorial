@@ -44,20 +44,18 @@ import ProductList from "./CartTuitorial/ProductList";
 import ProductItems from "./CartPractice/ProductItems";
 import Cart from "./CartPractice/Cart";
 
-
 function App() {
-
   return (
     <div className="App">
       {/* <div className="main">
         <Nav />
         <MainPage />
-      </div> */}
-      {/* <div className="main">
+      </div>
+      <div className="main">
         <MemeGenerator />
-      </div> */}
-      {/* <Card /> */}
-      {/* <div>
+      </div>
+      <Card />
+      <div>
         <h2>React Hook Practice</h2>
         <Hook />
         <HookTwo />
@@ -82,31 +80,28 @@ function App() {
       </div> */}
 
       {/* <div className="pt-5 pb-5">
-        <MultistepForm/>
-        <MultistepFormTwo/>
-        <Multipliction/>
-        <TodoAppTwo/>
-        <UserInfoForm/>
-        <ArrayMap/>
+        <MultistepForm />
+        <MultistepFormTwo />
+        <Multipliction />
+        <TodoAppTwo />
+        <UserInfoForm />
+        <ArrayMap />
       </div>
-      <Login/>
-      <Footer/>
-      <Modaal/>
-      <ModalForm/> */}
+      <Login />
+      <Footer />
+      <Modaal /> */}
+      {/* <ModalForm /> */}
 
-      {/* <ModalFormTwo/> */}
+      {/* <ModalFormTwo /> */}
       {/* <BbcMap /> 
        <Map/>
       <CardMapping/>
       <ForthPart/>
       <FifthPart/>
       <ForthPart/> */}
-      {/* <Cart/> */}
-      {/* <ProductList /> */}
-      <Cart/>
-     
-    
-
+      {/* <Cart />
+      <ProductList /> */}
+      <Cart />
     </div>
   );
 }
